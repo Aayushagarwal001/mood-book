@@ -1,70 +1,90 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Mood Book with Weather 🌤️📔
 
-## Available Scripts
+A personal mood tracking application that integrates with real-time weather data.
 
-In the project directory, you can run:
 
-### `npm start`
+## Features ✨
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Mood Tracking**: Log your daily mood with 5 different emotion options
+- **Weather Integration**: Automatically fetches local weather data
+- **Calendar View**: Visualize your mood history by month
+- **Dark Mode**: Toggle between light and dark themes
+- **Responsive Design**: Works on both mobile and desktop
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## How to Use 🚀
 
-### `npm test`
+1. **Log Your Mood**:
+   - Select how you're feeling using the emoji buttons
+   - Add optional notes about your day
+   - Click "Save Entry" to store your journal entry
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. **View Your History**:
+   - Switch to "View Entries" to see past logs
+   - Use the calendar to navigate specific dates
+   - Filter entries by mood type
 
-### `npm run build`
+3. **Weather Info**:
+   - The app automatically detects your location
+   - Displays current temperature and conditions
+   - Weather data is saved with each entry
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installation 💻
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/mood-journal.git
+   ```
+2. Install dependencies:
+   ```bash
+   cd mood-journal
+   npm install
+   ```
+3. Get a free API key from [OpenWeatherMap](https://openweathermap.org/)
+4. Create a `.env` file in the root directory:
+   ```
+   REACT_APP_WEATHER_API_KEY=your_api_key_here
+   ```
+5. Start the development server:
+   ```bash
+   npm start
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Technologies Used 🛠️
 
-### `npm run eject`
+- **Frontend**: React.js
+- **Styling**: CSS
+- **Date Handling**: date-fns
+- **Weather Data**: OpenWeatherMap API
+- **Icons**: React Icons
+- **State Management**: React Context API
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Folder Structure 📂
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+src/
+├── components/       # React components
+├── context/         # State management
+├── hooks/           # Custom hooks
+├── styles/          # CSS files
+├── App.js           # Main application
+└── index.js         # Entry point
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Contributing 🤝
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Contributions are welcome! Please follow these steps:
 
-## Learn More
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## License 📄
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Made with ❤️ by Aayush Agarwal
