@@ -1,0 +1,60 @@
+.mood-selector-container {
+    margin: 20px 0;
+  }
+  
+  .mood-title {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 16px;
+    color: #222;
+  }
+  
+  .mood-options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .mood-card {
+    width: 100px;
+    height: 120px;
+    border-radius: 12px;
+    border: 2px solid transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    transition: transform 0.2s, border-color 0.2s;
+    background-color: #f9f9f9;
+    cursor: pointer;
+  }
+  
+  .mood-card .emoji {
+    font-size: 32px;
+    margin-bottom: 8px;
+  }
+  
+  .mood-card .label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .mood-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .mood-card.selected {
+    border-color: #4a6fa5;
+    background-color: #eef4fc;
+  }
+  
+  /* Mood Background Colors */
+  .mood-excited { background-color: #fff5cc; }
+  .mood-happy { background-color: #e2f8d2; }
+  .mood-neutral { background-color: #d9ecfa; }
+  .mood-sad { background-color: #eadcf8; }
+  .mood-angry { background-color: #fddede; }
+  

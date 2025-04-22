@@ -1,0 +1,82 @@
+/* src/components/WeatherDisplay.css */
+.weather-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem 0;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+  }
+  
+  .dark .weather-container {
+    background-color: #2d3748;
+  }
+  
+  .weather-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .weather-icon-container {
+    font-size: 2rem;
+  }
+  
+  .weather-icon {
+    font-size: 2.5rem;
+  }
+  
+  .weather-icon.sunny {
+    color: #f6e05e;
+  }
+  
+  .weather-icon.cloudy {
+    color: #a0aec0;
+  }
+  
+  .weather-icon.rainy {
+    color: #4299e1;
+  }
+  
+  .weather-icon.snowy {
+    color: #ebf8ff;
+  }
+  
+  .weather-icon.stormy {
+    color: #805ad5;
+  }
+  
+  .weather-icon.foggy {
+    color: #cbd5e0;
+  }
+  
+  .weather-details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .weather-temp {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .weather-description {
+    text-transform: capitalize;
+    color: #4a5568;
+  }
+  
+  .dark .weather-description {
+    color: #cbd5e0;
+  }
+  
+  .weather-loading,
+  .weather-error,
+  .weather-unavailable {
+    padding: 0.5rem;
+    text-align: center;
+  }
+  
+  .weather-error {
+    color: #e53e3e;
+  }

@@ -1,0 +1,109 @@
+/* Main container styles */
+.mood-journal-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: white;
+  }
+  
+  .dark .mood-journal-container {
+    background-color: #1f2937;
+  }
+  
+  /* Header styles */
+  .journal-header {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #374151;
+  }
+  
+  .dark .journal-header {
+    color: #f3f4f6;
+  }
+  
+  /* Date display */
+  .current-date {
+    font-size: 1.1rem;
+    color: #6b7280;
+    margin-bottom: 2rem;
+  }
+  
+  .dark .current-date {
+    color: #9ca3af;
+  }
+  
+  /* Weather display */
+  .weather-display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    background-color: #f9fafb;
+    border-radius: 8px;
+  }
+  
+  .dark .weather-display {
+    background-color: #374151;
+  }
+  
+  /* Mood selector */
+  .mood-selector {
+    margin-bottom: 2rem;
+  }
+  
+  .mood-selector h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #374151;
+  }
+  
+  .dark .mood-selector h2 {
+    color: #f3f4f6;
+  }
+  
+  /* Notes textarea */
+  .notes-textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    min-height: 120px;
+    margin-bottom: 2rem;
+    font-family: inherit;
+  }
+  
+  .dark .notes-textarea {
+    background-color: #374151;
+    border-color: #4b5563;
+    color: white;
+  }
+  
+  /* Save button */
+  .save-button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #4f46e5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .save-button:hover {
+    background-color: #4338ca;
+  }
+  
+  .dark .save-button {
+    background-color: #6366f1;
+  }
+  
+  .dark .save-button:hover {
+    background-color: #4f46e5;
+  }

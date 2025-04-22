@@ -1,0 +1,277 @@
+.entry-list-container {
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -5px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+  }
+  
+  .dark .entry-list-container {
+    background-color: #1e293b; /* Equivalent to gray-800 */
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1);
+  }
+  
+  .entry-list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .entry-list-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #374151; /* Equivalent to gray-800 */
+  }
+  
+  .dark .entry-list-title {
+    color: #e5e7eb; /* Equivalent to gray-200 */
+  }
+  
+  .filter-select {
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #d1d5db; /* Equivalent to gray-300 */
+    border-radius: 0.5rem;
+    outline: none;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    background-color: #fff;
+    color: #374151; /* Equivalent to gray-800 */
+  }
+  
+  .dark .filter-select {
+    border-color: #4b5563; /* Equivalent to gray-600 */
+    background-color: #374151; /* Equivalent to gray-700 */
+    color: #fff; /* Equivalent to white */
+  }
+  
+  .filter-select:focus {
+    border-color: #6366f1; /* Equivalent to indigo-500 */
+    box-shadow: 0 0 0 0.2rem rgba(99, 102, 241, 0.25); /* Equivalent to ring-indigo-500 with opacity */
+  }
+  
+  .no-entries {
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  .no-entries-icon {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2.5rem;
+    color: #9ca3af; /* Equivalent to gray-400 */
+    margin-bottom: 1rem;
+  }
+  
+  .no-entries-text {
+    color: #6b7280; /* Equivalent to gray-600 */
+  }
+  
+  .dark .no-entries-text {
+    color: #d1d5db; /* Equivalent to gray-400 */
+  }
+  
+  .entries-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .entry-item {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    transition-property: box-shadow, transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+  
+  .entry-item:hover {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+  
+  .mood-excited-bg {
+    background-color: #fef3c7; /* Equivalent to yellow-100 */
+  }
+  
+  .dark .mood-excited-bg {
+    background-color: #372902; /* Equivalent to yellow-900 */
+  }
+  
+  .mood-happy-bg {
+    background-color: #dcfce7; /* Equivalent to green-100 */
+  }
+  
+  .dark .mood-happy-bg {
+    background-color: #134e4a; /* Equivalent to green-900 */
+  }
+  
+  .mood-neutral-bg {
+    background-color: #e0f2fe; /* Equivalent to blue-100 */
+  }
+  
+  .dark .mood-neutral-bg {
+    background-color: #1e3a8a; /* Equivalent to blue-900 */
+  }
+  
+  .mood-sad-bg {
+    background-color: #e0e7ff; /* Equivalent to indigo-100 */
+  }
+  
+  .dark .mood-sad-bg {
+    background-color: #1e3a8a; /* Equivalent to indigo-900 */
+  }
+  
+  .mood-angry-bg {
+    background-color: #fee2e2; /* Equivalent to red-100 */
+  }
+  
+  .dark .mood-angry-bg {
+    background-color: #4f1d1d; /* Equivalent to red-900 */
+  }
+  
+  .entry-item-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .entry-date {
+    font-weight: 600;
+    color: #374151; /* Equivalent to gray-800 */
+  }
+  
+  .dark .entry-date {
+    color: #e5e7eb; /* Equivalent to gray-200 */
+  }
+  
+  .mood-info {
+    display: flex;
+    align-items: center;
+    margin-top: 0.25rem;
+  }
+  
+  .mood-icon {
+    font-size: 1.25rem;
+    margin-right: 0.5rem;
+  }
+  
+  .mood-text {
+    color: #4b5563; /* Equivalent to gray-700 */
+  }
+  
+  .dark .mood-text {
+    color: #d1d5db; /* Equivalent to gray-300 */
+  }
+  
+  .weather-info {
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+  }
+  
+  .weather-icon {
+    font-size: 1rem;
+    margin-right: 0.5rem;
+  }
+  
+  .weather-icon-yellow {
+    color: #facc15; /* Equivalent to yellow-400 */
+  }
+  
+  .weather-icon-gray {
+    color: #9ca3af; /* Equivalent to gray-400 */
+  }
+  
+  .weather-icon-blue {
+    color: #60a5fa; /* Equivalent to blue-400 */
+  }
+  
+  .weather-icon-light-blue {
+    color: #bae6fd; /* Approximate for blue-200 */
+  }
+  
+  .weather-icon-purple {
+    color: #a855f7; /* Equivalent to purple-500 */
+  }
+  
+  .weather-icon-medium-blue {
+    color: #7dd3fc; /* Approximate for blue-300 */
+  }
+  
+  .weather-icon-light-gray {
+    color: #d1d5db; /* Equivalent to gray-300 */
+  }
+  
+  .weather-text {
+    color: #4a5568; /* Equivalent to gray-600 */
+  }
+  
+  .dark .weather-text {
+    color: #d3d6da; /* Approximate for gray-400 */
+  }
+  
+  .entry-actions {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .edit-button,
+  .delete-button {
+    padding: 0.5rem;
+    border-radius: 9999px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+  }
+  
+  .edit-button {
+    color: #6366f1; /* Equivalent to indigo-600 */
+  }
+  
+  .dark .edit-button {
+    color: #818cf8; /* Equivalent to indigo-400 */
+  }
+  
+  .edit-button:hover {
+    background-color: #edf2ff; /* Equivalent to indigo-100 */
+  }
+  
+  .dark .edit-button:hover {
+    background-color: #3730a3; /* Equivalent to indigo-900 */
+  }
+  
+  .delete-button {
+    color: #ef4444; /* Equivalent to red-600 */
+  }
+  
+  .dark .delete-button {
+    color: #fca5a5; /* Equivalent to red-400 */
+  }
+  
+  .delete-button:hover {
+    background-color: #fee2e2; /* Equivalent to red-100 */
+  }
+  
+  .dark .delete-button:hover {
+    background-color: #7f1d1d; /* Equivalent to red-900 */
+  }
+  
+  .entry-note-wrapper {
+    margin-top: 0.75rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid #e5e7eb; /* Equivalent to gray-200 */
+  }
+  
+  .dark .entry-note-wrapper {
+    border-top-color: #4b5563; /* Equivalent to gray-700 */
+  }
+  
+  .entry-note {
+    color: #4b5563; /* Equivalent to gray-700 */
+    white-space: pre-wrap;
+  }
+  
+  .dark .entry-note {
+    color: #d1d5db; /* Equivalent to gray-300 */
+  }
